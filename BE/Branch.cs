@@ -10,6 +10,14 @@ namespace BE
     public class Branch
     {
         //ctor
+<<<<<<< HEAD
+=======
+        public Branch()
+        {
+            accessGranted = true;
+            branchManagerPassword = "saveTheQueen770";
+        }
+>>>>>>> origin/master
         public Branch(string branchName, string branchAddress, long branchPhoneNum, string branchManager, int branchEmployee, int branchDeliveryFree, branchHechser branchHechserBranch, int branchID = 0)
         {
             this.branchID = branchID;
@@ -20,6 +28,7 @@ namespace BE
             this.branchEmployee = branchEmployee;
             this.branchDeliveryFree = branchDeliveryFree;
             this.branchHechserBranch = branchHechserBranch;
+<<<<<<< HEAD
         }
         //properties
         public int branchID
@@ -46,6 +55,23 @@ namespace BE
         public List<Dish> listDishforBranch { get; private set; }
         public List<Order> listOrderforBranch { get; private set; }
         //functions
+=======
+            accessGranted = true;
+            branchManagerPassword = "saveTheQueen770";
+        }
+        //Properties.
+        public int branchID { get; set; }
+        public string branchName { get; set; }
+        public string branchAddress { get; set; }
+        public long branchPhoneNum { get; set; }
+        public string branchManager { get; set; }
+        public int branchEmployee { get; set; }
+        public int branchDeliveryFree { get; set; }
+        public branchHechser branchHechserBranch { get; set; }
+        static private string branchManagerPassword;
+        static private bool accessGranted;
+        //Functions.
+>>>>>>> origin/master
         public override string ToString()
         {
             string temp = null;
@@ -68,5 +94,40 @@ namespace BE
             Random r = new Random();
             branchID = r.Next(1, 999);
         }
+<<<<<<< HEAD
+=======
+        //Functions for the password.
+        public bool passwordCorrect(string passwordAttempt)
+        {
+            if (passwordAttempt.CompareTo(branchManagerPassword) == 0)
+                return true;
+            else
+                return false;
+        }
+        public bool insertNewPassword(string oldPassword, string newPassword)
+        {
+            if (passwordCorrect(oldPassword))
+            {
+                branchManagerPassword = newPassword;
+                return true;
+            }
+            else
+                return false;
+
+        }
+        public void grantAccess()
+        {
+            accessGranted = true;
+        }
+        public void denyAccess()
+        {
+            accessGranted = false;
+        }
+        public bool getAccess()
+        {
+            return accessGranted;
+        }
+
+>>>>>>> origin/master
     }
 }

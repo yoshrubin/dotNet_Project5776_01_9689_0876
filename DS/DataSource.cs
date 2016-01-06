@@ -9,6 +9,7 @@ namespace DS
 {
     public class DataSource
     {
+<<<<<<< HEAD
         public static List<Branch> branchList;
         public static List<Order> orderList;
         public static List<Dish> dishList;
@@ -20,5 +21,11 @@ namespace DS
             dishList = new List<Dish>();
             ordDishList = new List<Ordered_Dish>();
         }
+=======
+        public static List<Branch> branchList = new List<Branch>();
+        public static List<Order> orderList = new List<Order>();
+        public static List<Dish> dishList = new List<Dish>();
+        public static List<Ordered_Dish> ordDishList = new List<Ordered_Dish>();
+>>>>>>> origin/master
     }
 }

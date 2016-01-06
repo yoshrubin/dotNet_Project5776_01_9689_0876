@@ -4,12 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BE;
+<<<<<<< HEAD
 using DS;
 
 namespace BL
 {
     class BL_imp : DataSource, IBL
     {
+=======
+using DAL;
+
+namespace BL
+{
+    class BL_imp : IBL
+    {
+        IDAL dl = FactoryDAL.getIDAL();
+>>>>>>> origin/master
         //fixed
         #region // Functions similar to IDAL
         //ADD
@@ -17,6 +27,7 @@ namespace BL
         // Checks if the branch exists by the branchID, if it doesn't, it is add it to the branchlist.
         public void addBranch(Branch x)
         {
+<<<<<<< HEAD
             bool available = true;
             if (x.branchID > 0)
             {
@@ -33,16 +44,41 @@ namespace BL
                     available = true;
                     x.randBranchNum(); // func in Branch.cs that gives a new random branchNum -> [1,1000]
                     foreach (Branch item in branchList)
+=======
+            bool available = false;
+            if (x.branchID == 0)
+            {
+                do
+                { 
+                    available = true;
+                    x.randBranchNum(); // func in Branch.cs that gives a new random branchNum -> [1,1000]
+                    foreach (Branch item in dl.sumBranch())
+>>>>>>> origin/master
                     {
                         if (item.branchID == x.branchID)
                             available = false;
                     }
                 } while (!available); // The fact that the number exists in the list doesn't mean we arent going to add it, just give it a new random numer
             }
+<<<<<<< HEAD
             if (available) // add to the list.
                 branchList.Add(x);
             else
                 throw new Exception("branchID already exists for a different branch.");
+=======
+            if (x.branchID > 1000)
+                throw new Exception("BL Error: Branch ID exceeds maximum(1000).");
+            if (x.branchID < 0)
+                throw new Exception("BL Error: Branch ID receeds minimum(0)");
+            if (x.branchPhoneNum.ToString().Length != 10)
+                throw new Exception("BL Error: Branch Phone number doesn't have correct amount of digits (10)");
+            if (x.branchEmployee < 1)
+                throw new Exception("Bl Error: Number of branch Employees receeds minimum(1)");
+            if (x.branchDeliveryFree < 0)
+                throw new Exception("BL Error: Number of branch Delivery boy's isn't a number.");
+            if (available) // add to the list.
+                dl.addBranch(x);
+>>>>>>> origin/master
         }
         // Checks if the dish exists by the dishID, if it doesn't, it is added to the dishlist.
         public void addDish(Dish x)
@@ -266,15 +302,29 @@ namespace BL
         #endregion
         #endregion
 
+<<<<<<< HEAD
         public double SumMoneyDishes()
+=======
+        public double SumMoneyDishesBranch(Branch x)
+>>>>>>> origin/master
         {
             double sumMoney = 0;
             foreach (Ordered_Dish item in ordDishList)
             {
+<<<<<<< HEAD
                 double temp = findDishPrice(item.ordDishID); // sending to func we created to find and return dish price.
                 for (int i = 0; i < item.ordDishNum; i++)
                 {
                     sumMoney += temp;
+=======
+                if (x.branchID == item.ordDishID)//if the dish applies to the Branch.
+                {
+                    double temp = findDishPrice(item.ordDishID); // sending to func we created to find and return dish price.
+                    for (int i = 0; i < item.ordDishNum; i++)
+                    {
+                        sumMoney += temp;
+                    }
+>>>>>>> origin/master
                 }
             }
             return sumMoney;
@@ -320,9 +370,15 @@ namespace BL
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
         public bool tooYoung(Order x)
         {
             if (x.orderAge < 18)
+=======
+        public bool tooYoung(int x)
+        {
+            if (x < 18)
+>>>>>>> origin/master
                 return true;
             else
                 return false;
@@ -389,12 +445,22 @@ namespace BL
             double mostMoney = 0; // Highest amount of money for the Branch
             double sumOrdDishes = 0; // Sum of money from all the ordered dishes of a branch
             Branch bestBranch = null;
+<<<<<<< HEAD
             foreach (Branch branchitem in branchList)
             {
                 foreach (Order item in branchitem.listOrderforBranch)
                 {
                     if (item.orderTime.Month == DateTime.Now.Month) // Only consider the orders made within the Month.
                         sumOrdDishes += SumMoneyDishes();
+=======
+            foreach (Branch branchitem in branchList)//go through each branch
+            {
+                foreach (Order item in orderList)
+                {
+                    // Only consider the orders made within the Month, and from that branch.
+                    if (item.orderTime.Month == DateTime.Now.Month && item.orderBranch == branchitem.branchID)
+                        sumOrdDishes += SumMoneyDishesBranch(branchitem);
+>>>>>>> origin/master
                 }
                 if (sumOrdDishes > mostMoney)
                 {
@@ -411,6 +477,19 @@ namespace BL
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD
+=======
+        public bool tooLittleHoly(Order x)
+        {
+            Branch checkBranch = new Branch();
+            checkBranch = getBranch(x.orderBranch);
+            if ((int)x.orderHechserOrder < (int)checkBranch.branchHechserBranch)
+                return true;
+            else
+                return false;
+        }
+
+>>>>>>> origin/master
         /*public List<Branch> rankBranchPerMonth(List<Branch> branchList)
         {
             var queryWhatevra = from item in branchList

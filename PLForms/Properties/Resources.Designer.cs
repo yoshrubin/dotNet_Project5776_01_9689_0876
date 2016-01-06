@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 namespace PLForm.Properties
+=======
+namespace PLForms.Properties
+>>>>>>> origin/master
 {
 
 
@@ -44,7 +48,11 @@ namespace PLForm.Properties
             {
                 if ((resourceMan == null))
                 {
+<<<<<<< HEAD
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PLForm.Properties.Resources", typeof(Resources).Assembly);
+=======
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PLForms.Properties.Resources", typeof(Resources).Assembly);
+>>>>>>> origin/master
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -8,7 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+<<<<<<< HEAD
 namespace PLForm.Properties
+=======
+namespace PLForms.Properties
+>>>>>>> origin/master
 {
 
 

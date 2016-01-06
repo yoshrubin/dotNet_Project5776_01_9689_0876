@@ -6,7 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
+<<<<<<< HEAD
 namespace PLForm
+=======
+namespace PLForms
+>>>>>>> origin/master
 {
     /// <summary>
     /// Interaction logic for App.xaml

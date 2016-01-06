@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 ﻿<Application x:Class="PLForm.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:PLForm"
+=======
+﻿<Application x:Class="PLForms.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PLForms"
+>>>>>>> origin/master
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

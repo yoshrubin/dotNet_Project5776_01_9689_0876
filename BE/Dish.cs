@@ -11,6 +11,13 @@ namespace BE
     public class Dish
     {
         //ctor
+<<<<<<< HEAD
+=======
+        public Dish()
+        {
+            dishID = 0;
+        }
+>>>>>>> origin/master
         public Dish(int dishID, string dishName, double dishPrice, dishSize dishSizeDish, dishHechser dishHechserDish)
         {
             this.dishID = dishID;
@@ -20,6 +27,7 @@ namespace BE
             this.dishHechserDish = dishHechserDish;
         }
         //properties
+<<<<<<< HEAD
         public int dishID
         {
             get
@@ -38,6 +46,13 @@ namespace BE
         public double dishPrice { get; private set; }
         public dishSize dishSizeDish { get; private set; }
         public dishHechser dishHechserDish { get; private set; }
+=======
+        public int dishID { get; set; }
+        public string dishName { get; set; }
+        public double dishPrice { get; set; }
+        public dishSize dishSizeDish { get; set; }
+        public dishHechser dishHechserDish { get; set; }
+>>>>>>> origin/master
         //func
         public override string ToString()
         {
