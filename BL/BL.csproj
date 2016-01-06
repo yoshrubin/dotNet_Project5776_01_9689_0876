@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4FB7463F-735A-4ED5-9B38-F91F60120510}</ProjectGuid>
+    <ProjectGuid>{29A30C2A-36F6-4D59-9B1C-E7920BE7793C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BL</RootNamespace>
@@ -46,17 +46,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE.1\BE.csproj">
-      <Project>{b94c7b0a-082f-4241-880f-7db0b6941eac}</Project>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{083bbfed-11bf-400b-893f-4b58b07b06f1}</Project>
       <Name>BE</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{bb3215eb-de63-437c-a4a2-eeefa63c9f01}</Project>
+      <Project>{725a7867-dea5-4a3f-b643-7a6680f73795}</Project>
       <Name>DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DS\DS.csproj">
-      <Project>{59264765-4299-46d3-b41d-625311aa848f}</Project>
-      <Name>DS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
