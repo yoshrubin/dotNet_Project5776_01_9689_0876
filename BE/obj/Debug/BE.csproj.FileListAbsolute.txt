@@ -1,0 +1,10 @@
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BE\bin\Debug\BE.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BE\bin\Debug\BE.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BE\obj\Debug\BE.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BE\obj\Debug\BE.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BE\bin\Debug\BE.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BE\bin\Debug\BE.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BE\obj\Debug\BE.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BE\obj\Debug\BE.pdb

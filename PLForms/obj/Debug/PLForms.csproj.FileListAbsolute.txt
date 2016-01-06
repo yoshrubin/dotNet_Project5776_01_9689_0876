@@ -1,0 +1,63 @@
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.exe.config
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.exe
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BE.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BL.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DS.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DAL.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BE.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BL.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DS.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DAL.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.csprojResolveAssemblyReference.cache
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\branchWindow.g.cs
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\dishWindow.g.cs
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\MainWindow.g.cs
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\orderWindow.g.cs
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\passwordWindow.g.cs
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\App.g.cs
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms_MarkupCompile.cache
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms_MarkupCompile.lref
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\branchWindow.baml
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\dishWindow.baml
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\MainWindow.baml
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\orderWindow.baml
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\passwordWindow.baml
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.g.resources
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.Properties.Resources.resources
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.csproj.GenerateResource.Cache
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.exe
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.pdb
+C:\Users\Shaul Solomon\Documents\GitHub\Mini-Project C#\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.exe.config
+C:\Users\Shaul Solomon\Documents\GitHub\Mini-Project C#\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.exe
+C:\Users\Shaul Solomon\Documents\GitHub\Mini-Project C#\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.exe.config
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.exe
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.csprojResolveAssemblyReference.cache
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\branchWindow.g.cs
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\dishWindow.g.cs
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\MainWindow.g.cs
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\orderWindow.g.cs
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\passwordWindow.g.cs
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\App.g.cs
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms_MarkupCompile.cache
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms_MarkupCompile.lref
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.exe
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\PLForms.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BE.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BL.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DS.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DAL.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BE.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\BL.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DS.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\bin\Debug\DAL.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\branchWindow.baml
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\dishWindow.baml
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\MainWindow.baml
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\orderWindow.baml
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\passwordWindow.baml
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.g.resources
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.Properties.Resources.resources
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\PLForms\obj\Debug\PLForms.csproj.GenerateResource.Cache

@@ -1,0 +1,22 @@
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\BL.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\BL.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\BE.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\DAL.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\DS.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\BE.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\DAL.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\bin\Debug\DS.pdb
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\obj\Debug\BL.dll
+c:\users\shaul solomon\documents\visual studio 2015\Projects\dotNet5776_Project001_9689_0876\BL\obj\Debug\BL.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\BL.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\BL.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\BE.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\DAL.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\DS.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\BE.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\DAL.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\bin\Debug\DS.pdb
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\obj\Debug\BL.dll
+C:\Users\Shaul Solomon\Google Drive\Year 2\Semester 1\dotNet5776_Project001_9689_0876\BL\obj\Debug\BL.pdb
