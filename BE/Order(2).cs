@@ -38,7 +38,7 @@ namespace BE
         public string orderCustAddress { get;  set; } //Where he is from
         public string orderCustLocation { get; set; } // Where he wants to be sent to
         public int orderCustCC { get; set; }
-        public int orderAge { get; private set; }
+        public int orderAge { get; set; }
         //func
         public override string ToString()
         {

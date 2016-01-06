@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL;
 
-namespace BL
+namespace DAL
 {
-    public class FactoryBL
+    public class FactoryDAL
     {
-        public static IBL getIBL()
+        public static IDAL getIDAL()
         {
-            return new BL_imp();
+            return new Dal_imp();
         }
     }
 }

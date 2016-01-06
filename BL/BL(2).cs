@@ -9,12 +9,12 @@ namespace BL
 {
     public interface IBL
     {
-        #region Core Functions (Similar to IDAL)
+        #region similar to IDAL
 
         #region dish functions
         //DISH
         void addDish(Dish x);
-        void deleteDish(Dish x);
+        void deleteDish(int x);
         void updateDish(Dish x);
         Dish getDish(int dishID);
         #endregion
@@ -22,7 +22,7 @@ namespace BL
         #region order function
         //ORDER
         void addOrder(Order x);
-        void deleteOrder(Dish x);
+        void deleteOrder(int x);
         void updateOrder(Order x);
         Order getOrder(int orderID);
         #endregion
@@ -31,20 +31,20 @@ namespace BL
         //Ordered-Dish
         void addOrdDish(Ordered_Dish x);
         void updateOrdDish(Ordered_Dish x);
-        void deleteOrdDish(Ordered_Dish x);
+        void deleteOrdDish(int x, int y);
         Ordered_Dish getOrdDish(int OrdDishID, int OrdDishNum);
         #endregion
 
         #region branch function
         //BRANCH
         void addBranch(Branch x);
-        void deleteBranch(Branch x);
+        void deleteBranch(int x);
         void updateBranch(Branch x);
         Branch getBranch(int branchID);
         #endregion
 
         #region sum functions
-        IEnumerable<Order> sumOrder();
+        List<Order> sumOrder();
         List<Dish> sumDish();
         List<Branch> sumBranch();
         #endregion
@@ -52,6 +52,7 @@ namespace BL
 
         #endregion
 
+        //EXTRA
         double SumMoneyDishesBranch(Branch x);
         Dish mostOrderedDish();
         bool tooLittleMoniesDelivery(double x);
@@ -62,7 +63,7 @@ namespace BL
         List<Order> chooseOrder(Func<Order, bool> predicate = null);
         double moniesTime();
         double moniesPlace();
-        bool tooYoung(int x); // Need to get age.
+        bool tooYoung(Order x); // Need to get age.
         List<Dish> americanMenu();
         string managerOfTheMonth();
         Branch branchSuccessMonth();

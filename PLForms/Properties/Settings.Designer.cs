@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PLForm.Properties
+namespace PLForms.Properties
 {
 
 

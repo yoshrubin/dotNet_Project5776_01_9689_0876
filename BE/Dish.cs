@@ -11,6 +11,10 @@ namespace BE
     public class Dish
     {
         //ctor
+        public Dish()
+        {
+            dishID = 0;
+        }
         public Dish(int dishID, string dishName, double dishPrice, dishSize dishSizeDish, dishHechser dishHechserDish)
         {
             this.dishID = dishID;
@@ -20,24 +24,11 @@ namespace BE
             this.dishHechserDish = dishHechserDish;
         }
         //properties
-        public int dishID
-        {
-            get
-            {
-                return dishID;
-            }
-            private set
-            {
-                if (value > 99 && value <= 0) // don't want to have to many dishes available.
-                    throw new Exception("dishID isn't within range of usable numbers.");
-                else
-                    dishID = value;
-            }
-        }
-        public string dishName { get; private set; }
-        public double dishPrice { get; private set; }
-        public dishSize dishSizeDish { get; private set; }
-        public dishHechser dishHechserDish { get; private set; }
+        public int dishID { get; set; }
+        public string dishName { get; set; }
+        public double dishPrice { get; set; }
+        public dishSize dishSizeDish { get; set; }
+        public dishHechser dishHechserDish { get; set; }
         //func
         public override string ToString()
         {

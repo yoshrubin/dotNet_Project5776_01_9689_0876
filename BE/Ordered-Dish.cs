@@ -17,9 +17,9 @@ namespace BE
         }
         //properties
         //Exceptions with fitting to orders and dishes will be placed in add ordered-dish.
-        public int ordDishID { get; private set; } // Same ID as the Order
-        public int ordDishNum { get; private set; } // Same ID as the Dish
-        public int ordDishAmount { get; private set; } // The amount of said Dish
+        public int ordDishID { get; set; } // Same ID as the Order
+        public int ordDishNum { get; set; } // Same ID as the Dish
+        public int ordDishAmount { get; set; } // The amount of said Dish
         //funcs
         public override string ToString()
         {
