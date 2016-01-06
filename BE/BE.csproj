@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{083BBFED-11BF-400B-893F-4B58B07B06F1}</ProjectGuid>
+    <ProjectGuid>{B94C7B0A-082F-4241-880F-7DB0B6941EAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BE</RootNamespace>
-    <AssemblyName>BE</AssemblyName>
+    <RootNamespace>BE._1</RootNamespace>
+    <AssemblyName>BE.1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Branch.cs" />
-    <Compile Include="Dish.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="Dish.cs" />
     <Compile Include="Ordered-Dish.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

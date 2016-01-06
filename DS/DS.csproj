@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36686A46-323C-4C35-AB0F-7B895099A928}</ProjectGuid>
+    <ProjectGuid>{59264765-4299-46D3-B41D-625311AA848F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DS</RootNamespace>
@@ -40,13 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dal_imp.cs" />
     <Compile Include="DataSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BE\BE.csproj">
-      <Project>{083bbfed-11bf-400b-893f-4b58b07b06f1}</Project>
+    <ProjectReference Include="..\BE.1\BE.csproj">
+      <Project>{b94c7b0a-082f-4241-880f-7db0b6941eac}</Project>
       <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{bb3215eb-de63-437c-a4a2-eeefa63c9f01}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

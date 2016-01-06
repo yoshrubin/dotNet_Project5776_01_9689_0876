@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using BE;
 using DS;
+using DAL;
 
-namespace BL
+namespace DS
 {
-    class BL_imp : DataSource, IBL
+    class Dal_imp : DataSource, IDAL
     {
-        //fixed
-        #region // Functions similar to IDAL
         //ADD
         #region // add functions revamped
         // Checks if the branch exists by the branchID, if it doesn't, it is add it to the branchlist.
@@ -77,7 +76,7 @@ namespace BL
         // Checks it the ordDish exists by the ordDishID, if it does, I just increase the amount - if not, I add it to the ordDishlist.
         public void addOrdDish(Ordered_Dish x)
         {
-           foreach (Ordered_Dish item in ordDishList)
+            foreach (Ordered_Dish item in ordDishList)
             {
                 if (item.ordDishID == x.ordDishID && item.ordDishNum == x.ordDishNum) // The same order and dish num.
                 {
@@ -147,7 +146,7 @@ namespace BL
 
         public void deleteOrdDish(int x, int y)//Need to send the OrdDish ID and NUM.
         {
-            Ordered_Dish tempOD = getOrdDish(x,y);
+            Ordered_Dish tempOD = getOrdDish(x, y);
             if (tempOD == null)
                 ordDishList.Remove(tempOD);
             else
@@ -213,8 +212,9 @@ namespace BL
                 throw new Exception("Order not found.");
         }
         #endregion
+        // SUM
+        #region sum functions
         //SUM
-        #region // Sum functions
         public List<Branch> sumBranch()
         {
             return branchList;
@@ -264,164 +264,5 @@ namespace BL
             return null;
         }
         #endregion
-        #endregion
-
-        public double SumMoneyDishes()
-        {
-            double sumMoney = 0;
-            foreach (Ordered_Dish item in ordDishList)
-            {
-                double temp = findDishPrice(item.ordDishID); // sending to func we created to find and return dish price.
-                for (int i = 0; i < item.ordDishNum; i++)
-                {
-                    sumMoney += temp;
-                }
-            }
-            return sumMoney;
-        }
-
-        public bool tooMuchMonies(double x)
-        {
-            if (x > 2000)
-                return true; // true that the order is too expensive
-            else
-                return false;
-        }
-
-        public bool tooLittleHoly(orderHechser x, dishHechser y)
-        {
-            if ((int)x > (int)y)//dish is less holy then order
-                return true;//meaning dish isnt holy enough
-            else
-                return false;//meaning dish is good
-        }
-
-        public List<Order> chooseOrder(Func<Order, bool> predicate = null)
-        {
-            var queryAllOrders = from orders in orderList
-                                 where (predicate(orders))
-                                 select orders;
-            return (List<Order>)queryAllOrders;
-        }
-
-        #region // Not Sure how to Implement w/ Grouping
-        public double moniesOrder()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double moniesTime()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double moniesPlace()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool tooYoung(Order x)
-        {
-            if (x.orderAge < 18)
-                return true;
-            else
-                return false;
-        }
-        #endregion
-
-        //EXTRA
-        public double findDishPrice(int x)
-        {
-            foreach (Dish item in dishList)
-            {
-                if (x == item.dishID)
-                    return item.dishPrice;
-            }
-            return 0;
-        }
-
-        public Dish mostOrderedDish()
-        {
-            int counter = 0;
-            Dish bestDish = null;
-            foreach (Ordered_Dish item in ordDishList)
-            {
-                if (item.ordDishNum > counter)
-                {
-                    counter = item.ordDishNum;
-                    bestDish = getDish(item.ordDishID);
-                }
-            }
-            return bestDish;
-        }//Finds the most ordered dish per Order
-
-        public List<Dish> holierThanThou()
-        {
-            var queryHolyDish = from dish in dishList
-                                where (int)dish.dishHechserDish >= 2 //he'll prefer a better hescher, but will take high.
-                                select dish;
-            return (List<Dish>)queryHolyDish;
-        } //offers the dishes available for the holy.
-
-        public bool tooLittleMoniesDelivery(double x)
-        {
-            if (x < 20)
-                return true; // true that the order is too low for DELIVARY
-            else
-                return false;
-        } // checks if order is high enough for delivery.
-
-        public List<Dish> americanMenu()
-        {
-            var queryAmericanMenu = from dish in dishList
-                                    where (int)dish.dishSizeDish >= 2 // he'll prefer a larger dish, but will take large.
-                                    select dish;
-            return (List<Dish>)queryAmericanMenu;
-        }//Finds the menu for the Americans.
-
-        public string managerOfTheMonth()
-        {
-            return branchSuccessMonth().branchManager;
-        }//Finds the manager whose branch made the most money
-
-        public Branch branchSuccessMonth()
-        {
-            double mostMoney = 0; // Highest amount of money for the Branch
-            double sumOrdDishes = 0; // Sum of money from all the ordered dishes of a branch
-            Branch bestBranch = null;
-            foreach (Branch branchitem in branchList)
-            {
-                foreach (Order item in branchitem.listOrderforBranch)
-                {
-                    if (item.orderTime.Month == DateTime.Now.Month) // Only consider the orders made within the Month.
-                        sumOrdDishes += SumMoneyDishes();
-                }
-                if (sumOrdDishes > mostMoney)
-                {
-                    mostMoney = sumOrdDishes;
-                    bestBranch = branchitem; // found the bestBranch as of now
-                }
-                sumOrdDishes = 0;
-            }
-            return bestBranch;
-        }
-
-        public List<Branch> rankBranchPerMonth()
-        {
-            throw new NotImplementedException();
-        }
-
-        /*public List<Branch> rankBranchPerMonth(List<Branch> branchList)
-        {
-            var queryWhatevra = from item in branchList
-                                from item2 in item.listOrderforBranch
-                                where (item2.orderTime.Month == DateTime.Now.Month)
-                                orderby SumMoneyDishes(item2.listofOrderedDishes) descending
-                                select item;
-            return queryWhatevra.ToList<Branch>();
-
-        }*/
-
-        //FIND OUT HOW TO USE LAMBDA?!?!?!??!?!?!?!?!?!?!?
     }
 }

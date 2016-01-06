@@ -203,7 +203,6 @@ UpgradeLog*.htm
 *.rdl.data
 *.bim.layout
 *.bim_*.settings
-.DS_Store
 
 # Microsoft Fakes
 FakesAssemblies/
