@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+.DS_Store
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -203,7 +204,6 @@ UpgradeLog*.htm
 *.rdl.data
 *.bim.layout
 *.bim_*.settings
-.DS_Store
 
 # Microsoft Fakes
 FakesAssemblies/
